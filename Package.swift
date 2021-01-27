@@ -239,12 +239,6 @@ let package = Package(
         .linkedFramework("StoreKit"),
       ]
     ),
-    .binaryTarget(
-      name: "FirebaseAnalytics",
-      url: "https://dl.google.com/firebase/ios/swiftpm/7.4.0/FirebaseAnalytics.zip",
-      checksum: "560bf11462c9e064c0d55e10aef761af420f4f531415e896cac18edc88e9666f"
-    ),
-
     .target(
       name: "FirebaseAppDistributionTarget",
       dependencies: [.target(name: "FirebaseAppDistribution",
